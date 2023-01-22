@@ -1,0 +1,245 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* header section styling start */
+.offer-bar{
+    width:100%;
+    padding: 12px 20px;
+    text-align: center;
+    color:white;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;     
+}
+.offer-bar a {
+    color: white;
+}
+.services {
+    display: flex;
+    align-items: center;
+    padding: 12px 100px;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+}
+.services-item {
+    border-right: 1px solid black;
+    padding: 0 25px;
+}
+.services-item:last-child {
+    border-right: none;
+}
+.services-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.services .location {
+    display: flex;
+    align-items: center;
+}
+.services .location p {
+    margin-left: 10px;
+}
+/* header section styling end */
+
+/* navbar section styling start */
+.navbar {
+    padding: 20px 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+}
+.navbar .navbar-row {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .navbar-row:first-child {
+    padding-bottom: 10px;
+}
+.navbar .navbar-row:last-child {
+    display: block;
+}
+.navbar .navbar-row .left{
+    width: max-content;
+}
+.navbar .navbar-row .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .navbar-row .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.navbar .navbar-row .right {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .navbar-row .right .search input {
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+.navbar .navbar-row .right .search {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.navbar .navbar-row .ul {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .navbar-row .ul li {  
+    list-style: none;
+}
+.navbar .navbar-row .ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+/* navbar section styling end */
+
+/* offer section styling start */
+.offer-section {
+    padding: 0 100px;
+}
+.offer-section .offers {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.offer-section .offers img {
+    width: 100%;
+}
+/* offer section styling end */
+
+/* carasoul section styling start */
+.carasoul {
+    padding: 0 100px;
+}
+.carasoul .carasoul-block {
+    width: 100%;
+}
+.carasoul .carasoul-block #slideshow {
+    width: 100%;
+}
+.carasoul .carasoul-block #slideshow img {
+    width: 100%;
+}
+/* carasoul section styling end */
+
+/* fashion section styling start */
+.fashion {
+    padding: 20px 100px;
+}
+.fashion .fashion-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.fashion .fashion-container .fashion-container-item {
+    width: 50%;
+}
+.fashion .fashion-container .fashion-container-item img {
+    width: 100%;
+}
+/* fashion section styling end */
+
+/* featured-shop section styling start */
+.featured-shop {
+    padding: 20px 100px;
+}
+.featured-shop .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+.featured-shop .featured-shop-content {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+}
+.featured-shop .featured-shop-content .featured-shop-content-item{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featured-shop .featured-shop-content .featured-shop-content-item img{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 15px;
+}
+/* featured-shop section styling end */
+
+/*shirt section*/
+.shirt {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 15px 100px;
+}
+.shirt .women{
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shirt .women img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+}
+.women h1{
+    font-size:20px;
+}
+.women h2 {
+    font-size: 16px;
+}
+
+
+@media all and (min-width: 451px) and (max-width:750px) {
+
+    .shirtt{
+        
+        grid-template-columns: repeat(6,1fr);
+        
+        gap: 10;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 400px) {
+
+    .shirt{
+        
+        grid-template-columns: repeat(3, 1fr);
+        
+        gap: 20px;
+       
+    }
+}
+/*last*/
+.footer {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 50px 100px;
+    background-color: #f8f8f8;
+}
+.footer .last h4 {
+    margin-bottom: 15px;
+}
+.footer .last p {
+    line-height: 26px;
+}
